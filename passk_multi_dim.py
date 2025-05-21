@@ -23,7 +23,7 @@ def main():
 
     # Load samples
     with open(args.input_file, 'r') as f:
-        samples = json.loads(f)
+        samples = json.load(f)
 
     # Extract preds and gt from all samples
     all_preds = [sample['pred'] for sample in samples]
