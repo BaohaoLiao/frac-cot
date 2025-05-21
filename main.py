@@ -15,8 +15,6 @@ def main(args):
     # Out file
     model_name = args.model_name_or_path.split("/")[-1]
     output_dir = args.output_dir
-    if not os.path.exists(output_dir):
-        output_dir = f"outputs/{output_dir}"
     os.makedirs(f"{output_dir}/{args.data_name}", exist_ok=True)
 
     out_file_prefix = f"{model_name}_seed{args.seed}_t{args.temperature}topp{args.top_p}minp{args.min_p}_" \
