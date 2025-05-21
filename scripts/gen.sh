@@ -1,8 +1,7 @@
 #!/bin/bash
-
 set -x
 
-export CUDA_VISIBLE_DEVICES="0,1,2,3"
+export CUDA_VISIBLE_DEVICES="0"
 export VLLM_WORKER_MULTIPROC_METHOD=spawn
 export TOKENIZERS_PARALLELISM=false
 
@@ -11,6 +10,7 @@ OUTPUT_DIR=./outputs
 NUM_TEST_SAMPLE=-1
 DATA_NAME="aime24"
 
+mkdir -p ${OUTPUT_DIR}
 python3 -u main.py \
     --data_dir "./benchmarks" \
     --data_name ${DATA_NAME} \

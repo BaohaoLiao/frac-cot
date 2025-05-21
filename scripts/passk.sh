@@ -1,7 +1,7 @@
 #!/bin/bash
 set -x
 
-INPUT_FILE=
+INPUT_FILE=./outputs/aime24/DeepSeek-R1-Distill-Qwen-1.5B_seed0_t0.6topp0.95minp0.0_len32768_num-1_n16H16m4.json
 
 echo "pass@k in single dimension"
 
