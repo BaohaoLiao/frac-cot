@@ -1,4 +1,3 @@
-
 import os
 import json
 import argparse
@@ -312,7 +311,7 @@ def main(args):
                 sample_solutions.append(think_chunk_solutions)
                 sample_preds.append(think_chunk_preds)
             
-            ### Get completions for final chunk (full thinking)
+            ### Get solutions for final chunk (full thinking)
             final_solutions = [n_solutions[s]]  # Start with the original solution
             final_preds = [extract_pred_and_parse(n_solutions[s], args.data_name)]
             if args.num_solutions_per_chunk > 1:
@@ -327,7 +326,7 @@ def main(args):
             sample_preds.append(final_preds)
             
             all_solutions.append(sample_solutions)
-            all_preds.append(sample_solutions)
+            all_preds.append(sample_preds)
         
         ## Process results and put back into samples
         for i, sample in enumerate(samples):
