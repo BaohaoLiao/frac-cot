@@ -72,9 +72,9 @@ def main(args):
                 think_solutions_data = json.load(f)
                 loaded_think_solutions = think_solutions_data['think_solutions']
                 loaded_n_sampling = think_solutions_data.get('n_sampling', 1)
-                loaded_num_samples = think_solutions.get('num_samples', len(loaded_think_solutions) // loaded_n_sampling)
+                loaded_num_samples = think_solutions_data.get('num_samples', len(loaded_think_solutions) // loaded_n_sampling)
 
-            assert loaded_n_sampling == args.n_sampling and len(loaded_think_solutions) == len(samples)
+            assert loaded_n_sampling == args.n_sampling and loaded_num_samples == len(samples)
             think_solutions = loaded_think_solutions
             print(f"Successfully loaded think solutions")
         except Exception as e:
