@@ -58,7 +58,7 @@ def prepare_prompt(question, tokenizer, data_name):
 
 def parse_question(example, data_name):
     question = ""
-    if data_name in ["mmlu_stem", "gpqa"]:
+    if data_name in ["gpqa"]:
         options = example["choices"]
         assert len(options) == 4
         for i, (label, option) in enumerate(zip("ABCD", options)):
