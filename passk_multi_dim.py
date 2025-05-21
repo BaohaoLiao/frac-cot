@@ -51,7 +51,7 @@ def main():
             # Reshape to n x h_chunks*m_solutions
             q_preds = []
             H_indices = np.linspace(H-1, H//args.h_chunks-1, args.h_chunks, dtype=int)[::-1] # must include the last pred
-            m_indices = np.arange(args.m_answers)
+            m_indices = np.arange(args.m_solutions)
             for n_idx in range(n):
                 tmp = []
                 for h_idx in H_indices:
