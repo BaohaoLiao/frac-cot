@@ -150,7 +150,7 @@ def main(args):
                 sample_solutions.append(all_solutions[idx])
                 sample_preds.append(all_preds[idx])
 
-            parsed_gt = parse_ground_truth(sample["answer"], args.data_name)
+            parsed_gt = parse_ground_truth(sample, args.data_name)
             new_gt, new_sample_preds, sample_scores = obtain_nHm_scores_and_preds(parsed_gt, sample_preds)
             sample.update({
                 "think_solution": think_solutions[i * args.n_sampling : (i + 1) * args.n_sampling],
@@ -222,7 +222,7 @@ def main(args):
                 sample_preds.append(all_preds[idx])
             
             ### Process predictions and scores using the 3D scoring function
-            parsed_gt = parse_ground_truth(sample["answer"], args.data_name)
+            parsed_gt = parse_ground_truth(sample, args.data_name)
             new_gt, new_sample_preds, sample_scores = obtain_nHm_scores_and_preds(parsed_gt, sample_preds)
             sample.update({
                 "think_solution": think_solutions[i * args.n_sampling : (i + 1) * args.n_sampling],
@@ -341,7 +341,7 @@ def main(args):
                 sample_preds.append(all_preds[idx])
 
             ### Process predictions and scores using the 3D scoring function
-            parsed_gt = parse_ground_truth(sample["answer"], args.data_name)
+            parsed_gt = parse_ground_truth(sample, args.data_name)
             new_gt, new_sample_preds, sample_scores = obtain_nHm_scores_and_preds(parsed_gt, sample_preds)
             sample.update({
                 "think_solution": think_solutions[i * args.n_sampling : (i + 1) * args.n_sampling],
