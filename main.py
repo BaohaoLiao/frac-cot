@@ -70,9 +70,10 @@ def main(args):
         try:
             with open(think_solutions_path, 'r') as f:
                 think_solutions_data = json.load(f)
-                loaded_think_solutions = think_solutions_data['think_solutions']
-                loaded_n_sampling = think_solutions_data.get('n_sampling', 1)
-                loaded_num_samples = think_solutions_data.get('num_samples', len(loaded_think_solutions) // loaded_n_sampling)
+                
+            loaded_think_solutions = think_solutions_data['think_solutions']
+            loaded_n_sampling = think_solutions_data.get('n_sampling', 1)
+            loaded_num_samples = think_solutions_data.get('num_samples', len(loaded_think_solutions) // loaded_n_sampling)
 
             assert loaded_n_sampling == args.n_sampling and loaded_num_samples == len(samples)
             think_solutions = loaded_think_solutions
