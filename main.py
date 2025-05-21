@@ -260,7 +260,7 @@ def main(args):
         llm_outputs = llm.generate(prompt_chunk_thinks, solution_sampling_params)
         llm_outputs = sorted(llm_outputs, key=lambda x: int(x.request_id))
         nHm_solutions = [output.text for llm_output in llm_outputs for output in llm_output.outputs] # flatten
-        assert len(nHm_solutions) == len(prompt_chunk_thinks) * (args.num_solutions_per_chunk - 1)
+        assert len(nHm_solutions) == len(prompt_chunk_thinks) * args.num_solutions_per_chunk
 
         ## Also generate multiple solutions for the full thinking
         prompt_full_thinks = []
