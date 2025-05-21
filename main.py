@@ -272,7 +272,7 @@ def main(args):
             prompt_full_thinks.append(prompt_full_think)
 
         ## Generate additional solutions for the full thinking
-        if args.num_answers_per_chunk > 1:
+        if args.num_solutions_per_chunk > 1:
             solution_sampling_params = SamplingParams(
                 temperature=args.temperature,
                 top_p=args.top_p,
