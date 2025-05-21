@@ -350,6 +350,7 @@ def main(args):
             })
 
     # save outputs
+    print(f"Saved 3D CoT to {out_file}")
     with open(out_file, "w") as f:
         json.dump(samples, f, indent=2)
     
