@@ -18,7 +18,7 @@
 - [Evaluation](#evaluation)
 
 ## Introduction
-We introduce **Fractured Sampling**, a unified inference-time strategy that interpolates between full CoT and solution-only sampling along three orthogonal axes: (1) the number of reasoning trajectories, (2) the number of final solutions per trajectory, and (3) the depth at which reasoning traces are truncated. 
+We introduce **Fractured Sampling**, a unified inference-time strategy that interpolates between full CoT and solution-only sampling along three orthogonal axes: (1) the number of reasoning trajectories (n dimension), (2) the number of final solutions per trajectory (m dimension), and (3) the depth at which reasoning traces are truncated (H dimension). 
 <p align="center">
   <img src="figs/frac_cot.gif" width="70%" />
 </p>
