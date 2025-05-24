@@ -7,7 +7,7 @@
 
 [![Paper](https://img.shields.io/badge/paper-A42C25?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2505.12992)
 [![Github](https://img.shields.io/badge/Fractured_CoT-000000?style=for-the-badge&logo=github&logoColor=000&logoColor=white)](https://github.com/BaohaoLiao/frac-cot)
-[![Website](https://img.shields.io/badge/Blog-%23000000.svg?style=for-the-badge&logo=semanticweb&logoColor=white)](https://huggingface.co/spaces/Salesforce/Efficient-Reasoning) 
+[![Website](https://img.shields.io/badge/Blog-%23000000.svg?style=for-the-badge&logo=semanticweb&logoColor=white)](https://huggingface.co/spaces/Salesforce/Efficient-Reasoning)
 
 </div>
 
