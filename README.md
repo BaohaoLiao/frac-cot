@@ -2,25 +2,31 @@
 
 # ⛓️ Fractured Chain-of-Thought Reasoning ⛓️
 
-</div>
-<div align="center">
 
 [![Paper](https://img.shields.io/badge/paper-A42C25?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2505.12992) 
 [![Github](https://img.shields.io/badge/Fractured%20CoT-000000?style=for-the-badge&logo=github&logoColor=000&logoColor=white)](https://github.com/BaohaoLiao/frac-cot)
 [![Website](https://img.shields.io/badge/Blog-%23000000.svg?style=for-the-badge&logo=semanticweb&logoColor=white)](https://huggingface.co/spaces/Salesforce/Efficient-Reasoning)
 
+<div align="center" style="font-family: Arial, sans-serif;">
+  <p>
+    <a href="#news" style="text-decoration: none; font-weight: bold;">🎉 News</a> •
+    <a href="#introduction" style="text-decoration: none; font-weight: bold;">📢 Introduction</a> •
+    <a href="#support" style="text-decoration: none; font-weight: bold;">🛠️ Support</a>
+  </p>
+  <p>
+    <a href="#installation" style="text-decoration: none; font-weight: bold;">⚙️ Installation</a> •
+    <a href="#evaluation" style="text-decoration: none; font-weight: bold;">🔎 Evaluation</a> •
+    <a href="#citation" style="text-decoration: none; font-weight: bold;">📝 Citation</a>
+  </p>
 </div>
 
-<!-- ## 📖 Contents
-- [Introduction](#📢introduction)
-- [Support](#🛠️support)
-- [Environment Setup](#⚙️environment-setup)
-- [Evaluation](#🔎evaluation) -->
+</div>
 
-## 🎉 News
+
+# 🎉News
 - [2025.05.21] We release the first version that mainly supports the pass@k experiments.
 
-## 📢 Introduction
+# 📢Introduction
 We introduce **Fractured Sampling**, a unified inference-time strategy that interpolates between full CoT and solution-only sampling along three orthogonal axes: (1) the number of reasoning trajectories (n dimension), (2) the number of final solutions per trajectory (m dimension), and (3) the depth at which reasoning traces are truncated (H dimension). 
 <p align="center">
   <img src="figs/frac_cot.gif" width="70%" />
@@ -34,19 +40,19 @@ We introduce **Fractured Sampling**, a unified inference-time strategy that inte
 5. 🧠 We can use the self-consistency property within the H dimension to early stop the genration, saving 20% tokens without sacrifying accuracy.
 
 
-## 🛠️ Support
+# 🛠️Support
 - [x] Pass@k for single dimension and multiple dimensions.
 - [ ] Best-of-N accross multiple dimensions.
 - [ ] Early stopping for efficient generation.
 
-## ⚙️ Environment Setup
+# ⚙️Installation
 ```bash
 conda create -n frac_cot python=3.10
 conda activate frac_cot
 pip install -r requirements.txt
 ```
 
-## 🔎 Evaluation
+# 🔎Evaluation
 1. Pass@k for single and multiple dimensions.
     ```bash
     # Generation
@@ -55,7 +61,7 @@ pip install -r requirements.txt
     bash ./scriots/passk.sh
     ```
 
-## 📝 Citation
+# 📝 Citation
 If you find our work useful, please cite as:
 ```
 @article{liao2025fractured,
