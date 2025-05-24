@@ -30,6 +30,9 @@ We introduce **Fractured Sampling**, a unified inference-time strategy that inte
 4. 📊 We can use a process reward model to select the best solution among all 3D samplings, a ~10% accuracy improvement compared to only sampling in the n dimension.
 5. 🧠 We can use the self-consistency property within the H dimension to early stop the genration, saving 20% tokens without sacrifying accuracy.
 
+## 📰 News
+- [2025.05.21] We release the first version that mainly supports the pass@k experiments.
+
 
 ## 🛠️ Support
 - [x] Pass@k for single dimension and multiple dimensions.
