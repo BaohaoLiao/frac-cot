@@ -17,6 +17,9 @@
 - [Environment Setup](#⚙️environment-setup)
 - [Evaluation](#🔎evaluation) -->
 
+## 🎉 News
+- [2025.05.21] We release the first version that mainly supports the pass@k experiments.
+
 ## 📢 Introduction
 We introduce **Fractured Sampling**, a unified inference-time strategy that interpolates between full CoT and solution-only sampling along three orthogonal axes: (1) the number of reasoning trajectories (n dimension), (2) the number of final solutions per trajectory (m dimension), and (3) the depth at which reasoning traces are truncated (H dimension). 
 <p align="center">
@@ -29,9 +32,6 @@ We introduce **Fractured Sampling**, a unified inference-time strategy that inte
 3. 🚀 Sampling over all 3 dimensions offers the highest Pass@k.
 4. 📊 We can use a process reward model to select the best solution among all 3D samplings, a ~10% accuracy improvement compared to only sampling in the n dimension.
 5. 🧠 We can use the self-consistency property within the H dimension to early stop the genration, saving 20% tokens without sacrifying accuracy.
-
-## 📰 News
-- [2025.05.21] We release the first version that mainly supports the pass@k experiments.
 
 
 ## 🛠️ Support
@@ -56,6 +56,7 @@ pip install -r requirements.txt
     ```
 
 ## 📝 Citation
+If you find our work useful, please cite as:
 ```
 @article{liao2025fractured,
   title={Fractured Chain-of-Thought Reasoning},
