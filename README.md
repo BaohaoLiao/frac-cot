@@ -11,13 +11,13 @@
 
 </div>
 
-## Contents
+## 📖 Contents
 - [Introduction](#introduction)
 - [Support](#support)
 - [Environment Setup](#environment-setup)
 - [Evaluation](#evaluation)
 
-## Introduction
+## 📢 Introduction
 We introduce **Fractured Sampling**, a unified inference-time strategy that interpolates between full CoT and solution-only sampling along three orthogonal axes: (1) the number of reasoning trajectories (n dimension), (2) the number of final solutions per trajectory (m dimension), and (3) the depth at which reasoning traces are truncated (H dimension). 
 <p align="center">
   <img src="figs/frac_cot.gif" width="70%" />
@@ -31,19 +31,19 @@ We introduce **Fractured Sampling**, a unified inference-time strategy that inte
 5. 🧠 We can use the self-consistency property within the H dimension to early stop the genration, saving 20% tokens without sacrifying accuracy.
 
 
-## Support
+## 🛠️ Support
 - [x] Pass@k for single dimension and multiple dimensions.
 - [ ] Best-of-N accross multiple dimensions.
 - [ ] Early stopping for efficient generation.
 
-## Environment Setup
+## ⚙️ Environment Setup
 ```bash
 conda create -n frac_cot python=3.10
 conda activate frac_cot
 pip install -r requirements.txt
 ```
 
-## Evaluation
+## 🔎 Evaluation
 1. Pass@k for single and multiple dimensions.
     ```bash
     # Generation
@@ -52,7 +52,7 @@ pip install -r requirements.txt
     bash ./scriots/passk.sh
     ```
 
-## Citation
+## 📝 Citation
 ```
 @article{liao2025fractured,
   title={Fractured Chain-of-Thought Reasoning},
