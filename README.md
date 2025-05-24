@@ -11,7 +11,7 @@
   <p>
     <a href="#news" style="text-decoration: none; font-weight: bold;">🎉 News</a> •
     <a href="#introduction" style="text-decoration: none; font-weight: bold;">📢 Introduction</a> •
-    <a href="#introduction" style="text-decoration: none; font-weight: bold;">📢 Introduction</a>
+    <a href="#support" style="text-decoration: none; font-weight: bold;">🤝 Support</a>
   </p>
   <p>
     <a href="#installation" style="text-decoration: none; font-weight: bold;">⚙️ Installation</a> •
@@ -40,7 +40,7 @@ We introduce **Fractured Sampling**, a unified inference-time strategy that inte
 5. 🧠 We can use the self-consistency property within the H dimension to early stop the genration, saving 20% tokens without sacrifying accuracy.
 
 
-# 🛠️Support
+# 🤝Support
 - [x] Pass@k for single dimension and multiple dimensions.
 - [ ] Best-of-N accross multiple dimensions.
 - [ ] Early stopping for efficient generation.
