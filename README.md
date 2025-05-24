@@ -11,7 +11,7 @@
   <p>
     <a href="#news" style="text-decoration: none; font-weight: bold;">🎉 News</a> •
     <a href="#introduction" style="text-decoration: none; font-weight: bold;">📢 Introduction</a> •
-    <a href="#support" style="text-decoration: none; font-weight: bold;">🛠️ Support</a>
+    <a href="#introduction" style="text-decoration: none; font-weight: bold;">📢 Introduction</a>
   </p>
   <p>
     <a href="#installation" style="text-decoration: none; font-weight: bold;">⚙️ Installation</a> •
