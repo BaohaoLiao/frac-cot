@@ -10,9 +10,9 @@
 - [Evaluation](#evaluation)
 
 ## Introduction
-In this work, we first show that truncated CoT, which stops reasoning before completion and directly generates the final answer, often matches full CoT sampling while using dramatically fewer tokens. Building on this insight, we introduce **Fractured Sampling**, a unified inference-time strategy that interpolates between full CoT and solution-only sampling along three orthogonal axes: (1) the number of reasoning trajectories, (2) the number of final solutions per trajectory, and (3) the depth at which reasoning traces are truncated. 
+We introduce **Fractured Sampling**, a unified inference-time strategy that interpolates between full CoT and solution-only sampling along three orthogonal axes: (1) the number of reasoning trajectories, (2) the number of final solutions per trajectory, and (3) the depth at which reasoning traces are truncated. 
 <p align="center">
-  <img src="figs/framework.png" width="80%" />
+  <img src="figs/frac_cot.gif" width="90%" />
 </p>
 
 **Main Takeaways**
