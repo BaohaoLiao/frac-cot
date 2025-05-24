@@ -14,7 +14,7 @@
     <a href="#support" style="text-decoration: none; font-weight: bold;">🤝 Support</a>
   </p>
   <p>
-    <a href="#installation" style="text-decoration: none; font-weight: bold;">⚙️ Installation</a> •
+    <a href="#installation" style="text-decoration: none; font-weight: bold;">👷 Installation</a> •
     <a href="#evaluation" style="text-decoration: none; font-weight: bold;">🔎 Evaluation</a> •
     <a href="#citation" style="text-decoration: none; font-weight: bold;">📝 Citation</a>
   </p>
@@ -45,7 +45,7 @@ We introduce **Fractured Sampling**, a unified inference-time strategy that inte
 - [ ] Best-of-N accross multiple dimensions.
 - [ ] Early stopping for efficient generation.
 
-# ⚙️Installation
+# 👷Installation
 ```bash
 conda create -n frac_cot python=3.10
 conda activate frac_cot
