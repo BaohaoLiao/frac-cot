@@ -1,7 +1,7 @@
 import json
 import argparse
 import numpy as np
-from passk_single_dim import pass_at_k
+from utils.eval import pass_at_k
 
 
 def main():

@@ -1,4 +1,5 @@
 from typing import Any, Dict
+import numpy as np
 from math_verify import parse, StringExtractionConfig, LatexExtractionConfig, verify
 
 
@@ -73,3 +74,15 @@ def obtain_nHm_scores_and_preds(gt, sample_preds):
         nHm_preds.append(Hm_new_preds)
     
     return new_gt, nHm_preds, nHm_scores
+
+
+def pass_at_k(n, c, k):
+    """
+    Calculate Pass@k metric for a single question
+    :param n: total number of samples
+    :param c: number of correct samples
+    :param k: k in pass@k
+    """
+    if n - c < k:
+        return 1.0
+    return 1.0 - np.prod(1.0 - k / np.arange(n - c + 1, n + 1))
