@@ -1,6 +1,6 @@
 <div align="center">
 
-# Fractured Chain-of-Thought Reasoning
+# ⛓️ Fractured Chain-of-Thought Reasoning ⛓️
 
 </div>
 <div align="center">
