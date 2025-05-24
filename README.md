@@ -61,7 +61,7 @@ pip install -r requirements.txt
     bash ./scriots/passk.sh
     ```
 
-# 📝 Citation
+# 📝Citation
 If you find our work useful, please cite as:
 ```
 @article{liao2025fractured,
