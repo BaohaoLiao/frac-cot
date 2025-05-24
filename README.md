@@ -33,8 +33,8 @@ We introduce **Fractured Sampling**, a unified inference-time strategy that inte
 
 ## Support
 - [x] Pass@k for single dimension and multiple dimensions.
-- [] Best-of-N accross multiple dimensions.
-- [] Early stopping for efficient generation.
+- [ ] Best-of-N accross multiple dimensions.
+- [ ] Early stopping for efficient generation.
 
 ## Environment Setup
 ```bash
