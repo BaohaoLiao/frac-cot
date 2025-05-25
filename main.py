@@ -391,7 +391,6 @@ def parse_args():
     parser.add_argument("--seed", default=0, type=int)
 
     args = parser.parse_args()
-    # top_p must be 1 when using greedy sampling (vllm)
     args.top_p = 1 if args.temperature == 0 else args.top_p
     return args
 
